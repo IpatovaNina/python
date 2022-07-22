@@ -29,6 +29,8 @@ L=[('kitten', 'sitting'),
 if __name__ == "__main__":
     for s, t in L:
         print(s, t, LevenshteinDistance(s, t))
+        
+#Второй вариант        
 def compare (s1,s2):
     ngrams = [s1[i:i+3] for i in range(len(s1))]
     count = 0
